@@ -1,19 +1,21 @@
 .footer {
     background: #2e2f42;
-    padding: 100px 0;
     height: auto;
 }
 .footer-container {
     display: flex;
-    align-items: flex-start;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+    gap: 72px;
+    padding: 96px 16px;
+    margin: 0 auto;
 }
 .footer-info {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     gap: 16px;
-    margin-right: 120px;
 }
 .footer-logo {
     font-weight: 700;
@@ -44,16 +46,16 @@
 }
 .footer-social-links {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
     gap: 16px;
-    margin-right: 83px;
 }
 .footer-socials-text {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    text-align: center;
     color: #fff;
 }
 .socials-link {
@@ -73,7 +75,7 @@
 .footer-socials {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     flex-direction: row;
     gap: 16px;
 }
@@ -83,10 +85,8 @@
 
 .footer-form {
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: row;
-    gap: 24px;
+    flex-direction: column;
+    gap: 16px;
     margin-top: 16px;
 }
 
@@ -122,6 +122,7 @@
     gap: 16px;
     border-radius: 4px;
     padding: 8px 24px;
+    margin: 0 auto;
     max-width: 165px;
     border: none;
     background-color: #4d5ae5;
@@ -137,4 +138,42 @@
 .subscribe-btn:focus {
     background-color: #31d0aa;
     cursor: pointer;
+}
+
+@media screen and (min-width: 767px) {
+    .footer-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: baseline;
+        column-gap: 24px;
+        row-gap: 72px;
+        padding-left: 92px;
+    }
+    .footer-info {
+        align-items: start;
+    }
+
+    .footer-social-links {
+        align-items: start;
+    }
+
+    .footer-socials-text {
+        text-align: left;
+    }
+
+    .footer-form {
+        flex-direction: row;
+        gap: 24px;
+    }
+}
+
+@media screen and (min-width: 1439px) {
+    .footer {
+        padding: 100px 0;
+    }
+
+    .footer-container {
+        padding: 0;
+        justify-content: space-between;
+    }
 }

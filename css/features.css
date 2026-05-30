@@ -1,15 +1,12 @@
 .features {
-    padding: 120px 0;
+    padding: 96px 0;
 }
 .features-container {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: row;
-    gap: 24px;
+    max-width: 320px;
+    margin: 0 auto;
 }
 .features-text{
-    font-weight: 400;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -25,33 +22,28 @@
     color: #2e2f42;
 }
 .features-list-title {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
     letter-spacing: 0.02em;
+    text-align: center;
     color: #2e2f42;
     margin: 0;
+    margin-bottom: 8px;
 }
 .features-list {
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: row;
-    gap: 24px;
+    flex-direction: column;
+    gap: 72px;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
 }
 .features-li {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: column;
-    gap: 8px;
     width: 264px;
 }
 .icon-container {
     box-sizing: border-box;
-    display: flex;  
+    display: none;  
     align-items: center;
     justify-content: center;
     flex-direction: row;
@@ -64,4 +56,58 @@
 }
 .icon-features {
     fill: #2e2f42;
+}
+
+@media (min-width: 767px) {
+    .features-container {
+        max-width: 100%;
+    }
+
+    .features-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 72px;
+    }
+
+    .features-li {
+        flex-basis: calc((100% - 24px) / 2);
+    }
+
+    .features-list-title {
+        text-align: left;
+        margin-bottom: 8px;
+    }
+}
+
+@media screen and (min-width: 1439px) {
+    .features {
+        padding: 120px 0;
+    }
+
+    .features-container {
+        max-width: 1158px;
+        padding: 0;
+    }
+
+    .features-text {
+        font-weight: 400;
+        margin-bottom: 8px;
+    }
+
+    .features-li {
+        max-width: 264px;
+    }
+
+    .features-list-title {
+        margin: 0;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    .icon-container {
+        display: flex;
+        margin-bottom: 8px;
+    }
 }

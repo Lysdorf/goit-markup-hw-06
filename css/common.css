@@ -22,13 +22,19 @@ p{
     margin: 0;
     padding-left: 0;
 }
+
+a {
+    text-decoration: none;
+    font-style: normal;
+}
+
 img {
     display: block;
 }
 .container {
     box-sizing: border-box;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 16px;
     max-width: 1158px;
     height: auto;
 }

@@ -1,0 +1,131 @@
+.mobile-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 72px 16px 40px;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transition:
+        opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu.is-open {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+}
+
+.close-menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    position: absolute;
+    right: 24px;
+    top: 24px;
+    gap: 0px;
+    margin-left: auto;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 24px;
+    width: 24px;
+    height: 24px;
+    background-color: #e7e9fc;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-menu-btn:hover,
+.close-menu-btn:focus {
+    background-color: #404bbf;
+    border: none;
+}
+
+.close-menu-icon {
+    fill: #2e2f42;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-menu-btn:hover .close-modal-icon,
+.close-menu-btn:focus .close-modal-icon {
+    fill: #fff;
+}
+
+.mobile-nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.mobile-nav-link {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    text-decoration: none;
+}
+
+.mobile-nav-link:hover {
+    color: #404bbf;
+}
+
+.mobile-contacts-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.mobile-contacts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.mobile-contacts-link {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #434455;
+    text-decoration: none;
+}
+
+.mobile-contacts-link:hover {
+    color: #4d5ae5;
+}
+
+.mobile-socials-link {
+    display: flex;
+    background-color: #4d5ae5;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    width: 40px;
+    height: 40px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-socials-link:hover,
+.mobile-socials-link:focus {
+    background-color: #404bbf;
+}
+
+.mobile-socials {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.icon-mobile {
+    fill: #f4f4fd;
+}
