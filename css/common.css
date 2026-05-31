@@ -61,3 +61,8 @@ img {
     color: #4d5ae5;
     text-decoration: underline;
 }
+@media screen and (min-width: 1158px) {
+    .container {
+        padding: 0 15px;
+    }
+}

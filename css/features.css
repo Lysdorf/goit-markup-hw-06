@@ -58,7 +58,7 @@
     fill: #2e2f42;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
     .features-container {
         max-width: 100%;
     }
@@ -80,7 +80,7 @@
     }
 }
 
-@media screen and (min-width: 1439px) {
+@media screen and (min-width: 1158px) {
     .features {
         padding: 120px 0;
     }
@@ -95,8 +95,14 @@
         margin-bottom: 8px;
     }
 
+    .features-list {
+        flex-wrap: nowrap;
+        row-gap: 0;
+    }
+
     .features-li {
         max-width: 264px;
+        flex-basis: auto;
     }
 
     .features-list-title {
@@ -104,10 +110,10 @@
         font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
+        margin-bottom: 8px;
     }
 
     .icon-container {
         display: flex;
-        margin-bottom: 8px;
     }
 }

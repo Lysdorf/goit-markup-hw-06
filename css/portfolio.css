@@ -100,9 +100,14 @@
     transform: translateY(0);
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
+    .portfolio {
+        height: 1698px;
+    }
+
     .portfolio-container {
         max-width: 100%;
+        height: 1506px;
     }
 
     .portfolio-list {
@@ -111,18 +116,19 @@
         column-gap: 24px;
         row-gap: 72px;
         max-width: 735px;
+        height: 1506px;
     }
 
     .portfolio-list-item {
         max-width: 355px;
-        flex-basis: calc((100% - 72px) / 3);
+        flex-basis: calc((100% - 24px) / 2);
     }
     .overlay {
         max-width: 355px;
     }
 }
 
-@media screen and (min-width: 1439px) {
+@media (min-width: 1158px) {
     .portfolio {
         padding: 120px 0;
     }
@@ -136,7 +142,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         column-gap: 24px;
-        row-gap: 112px;
+        row-gap: 72px;
         max-width: 1158px;
     }
 

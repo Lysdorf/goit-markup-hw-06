@@ -8,7 +8,6 @@
 .header-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     flex-direction: row;
 }
 .header-logo {
@@ -120,9 +119,13 @@
     background-color: rgba(0, 0, 0, 0);
     border: none;
     display: block;
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    padding: 0;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
     .header-container {
         gap: 120px;
     }
@@ -145,7 +148,6 @@
 
     .contacts-link {
         font-weight: 400;
-        font-size: 12px;
         line-height: 1.16667;
         letter-spacing: 0.04em;
     }
@@ -155,7 +157,7 @@
     }
 }
 
-@media screen and (min-width: 1439px) {
+@media screen and (min-width: 1158px) {
     .contacts-list {
         flex-direction: row;
         gap: 40px;

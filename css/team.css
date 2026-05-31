@@ -83,17 +83,24 @@
     .team-list {
         flex-direction: row;
         flex-wrap: wrap;
+        margin: 0 auto;
         column-gap: 24px;
         row-gap: 64px;
+        max-width: 736px;
     }
 
-    .team-li {
+    .team-list-item {
         flex-basis: calc((100% - 24px) / 2);
+        max-width: 264px;
     }
 }
 
 @media screen and (min-width: 1439px) {
     .team {
         padding: 120px 0;
+    }
+
+    .team-container {
+        max-width: 1158px;
     }
 }
