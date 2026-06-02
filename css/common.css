@@ -35,7 +35,7 @@ img {
     box-sizing: border-box;
     margin: 0 auto;
     padding: 0 16px;
-    max-width: 1158px;
+    max-width: 320px;
     height: auto;
 }
 .text-container {
@@ -61,8 +61,16 @@ img {
     color: #4d5ae5;
     text-decoration: underline;
 }
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
 @media screen and (min-width: 1158px) {
     .container {
         padding: 0 15px;
+        max-width: 1158px;
     }
 }

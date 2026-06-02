@@ -75,9 +75,9 @@
     fill: #f4f4fd;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
     .team-container {
-        max-width: 100%;
+        max-width: 768px;
     }
 
     .team-list {
@@ -95,12 +95,17 @@
     }
 }
 
-@media screen and (min-width: 1439px) {
+@media screen and (min-width: 1158px) {
     .team {
         padding: 120px 0;
     }
 
     .team-container {
         max-width: 1158px;
+    }
+
+    .team-list {
+        max-width: 1158px;
+        flex-wrap: nowrap;
     }
 }
