@@ -99,17 +99,22 @@
     gap: 24px;
 }
 
-.mobile-contacts-link {
+.mobile-contacts-link.color-accent {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: #4d5ae5;
     text-decoration: none;
 }
 
-.mobile-contacts-link:hover {
-    color: #4d5ae5;
+.mobile-contacts-link {
+    color: #434455;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-decoration: none;
 }
 
 .mobile-socials-link {

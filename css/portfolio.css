@@ -62,6 +62,7 @@
 }
 .portfolio-list-img {
     display: block;
+    max-height: 240px;
     width: 100%;
 }
 .portfolio-list-text {
@@ -116,8 +117,14 @@
 
     .portfolio-list-item {
         max-width: 355px;
+        max-height: 417px;
         flex-basis: calc((100% - 24px) / 2);
     }
+
+    .portfolio-list-img {
+        max-height: 296px;
+    }
+
     .overlay {
         max-width: 355px;
     }
