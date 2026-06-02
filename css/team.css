@@ -108,5 +108,6 @@
     .team-list {
         max-width: 1158px;
         flex-wrap: nowrap;
+        padding: 0;
     }
 }
